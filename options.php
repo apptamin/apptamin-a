@@ -170,13 +170,13 @@ function optionsframework_options() {
 		
 			
 	$options[] = array( "name" => "App Screenshot (front smartphone)",
-		"desc" => "Upload your app screenshot for the front SmartPhone. We recommend .jpg files with the following sizes : iPhone (186px*279px), Android (186px*310px).",
+		"desc" => "Upload your app screenshot for the front SmartPhone. We recommend .jpg files with the following sizes : iPhone (192px*339px), Android (186px*310px).",
 		"id" => "app_screenshot_1_uploader",
 		"type" => "upload",
 		"class" => "recommended");
 		
 	$options[] = array( "name" => "App Screenshot (back smartphone - not needed if only 1 phone displayed)",
-		"desc" => "Upload your app screenshot for the back Smartphone. We recommend .jpg files with the following sizes : iPhone (186px*279px), Android (186px310px).",
+		"desc" => "Upload your app screenshot for the back Smartphone. We recommend .jpg files with the following sizes : iPhone (192px*339px), Android (186px310px).",
 		"id" => "app_screenshot_2_uploader",
 		"type" => "upload");
 
@@ -228,13 +228,13 @@ function optionsframework_options() {
 		"type" => "textarea");
 	
 	$options[] = array( "name" => "",
-		"desc" => "Upload your app screenshot for the front SmartPhone for Feature #1. We recommend the following sizes : iPhone (186px*279px), Android (145px*242px).",
+		"desc" => "Upload your app screenshot for the front SmartPhone for Feature #1. We recommend the following sizes : iPhone (192px*339px), Android (185px*330px).",
 		"id" => "feature_1_screenshot_uploader",
 		"type" => "upload",
 		"class" => "recommended");
 		
 	$options[] = array( "name" => "",
-		"desc" => "Upload your app screenshot for the back Smartphone for Feature #1. We recommend the following sizes : iPhone (186px*279px), Android (145px*242px).",
+		"desc" => "Upload your app screenshot for the back Smartphone for Feature #1. We recommend the following sizes : iPhone (192px*339px), Android (185px*330px).",
 		"id" => "feature_1_back_screenshot_uploader",
 		"type" => "upload");
 	
@@ -274,13 +274,13 @@ function optionsframework_options() {
 		"type" => "textarea");
 	
 	$options[] = array( "name" => "",
-		"desc" => "Upload your app screenshot for the front SmartPhone for Feature #2. We recommend the following sizes : iPhone (186px*279px), Android (145px*242px).",
+		"desc" => "Upload your app screenshot for the front SmartPhone for Feature #2. We recommend the following sizes : iPhone (192px*339px), Android (185px*330px).",
 		"id" => "feature_2_screenshot_uploader",
 		"type" => "upload",
 		"class" => "recommended");
 		
 	$options[] = array( "name" => "",
-		"desc" => "Upload your app screenshot for the back Smartphone for Feature #2. We recommend the following sizes : iPhone (186px*279px), Android (145px*242px).",
+		"desc" => "Upload your app screenshot for the back Smartphone for Feature #2. We recommend the following sizes : iPhone (192px*339px), Android (185px*330px).",
 		"id" => "feature_2_back_screenshot_uploader",
 		"type" => "upload");
 		
@@ -321,13 +321,13 @@ function optionsframework_options() {
 		"type" => "textarea");
 	
 	$options[] = array( "name" => "",
-		"desc" => "Upload your app screenshot for the front SmartPhone for Feature #3. We recommend the following sizes : iPhone (186px*279px), Android (145px*242px).",
+		"desc" => "Upload your app screenshot for the front SmartPhone for Feature #3. We recommend the following sizes : iPhone (192px*339px), Android (185px*330px).",
 		"id" => "feature_3_screenshot_uploader",
 		"type" => "upload",
 		"class" => "recommended");
 		
 	$options[] = array( "name" => "",
-		"desc" => "Upload your app screenshot for the back Smartphone for Feature #3. We recommend the following sizes : iPhone (186px*279px), Android (145px*242px).",
+		"desc" => "Upload your app screenshot for the back Smartphone for Feature #3. We recommend the following sizes : iPhone (192px*339px), Android (185px*330px).",
 		"id" => "feature_3_back_screenshot_uploader",
 		"type" => "upload");
 		
@@ -367,13 +367,13 @@ function optionsframework_options() {
 		"type" => "textarea");
 	
 	$options[] = array( "name" => "",
-		"desc" => "Upload your app screenshot for the front SmartPhone for Feature #4. We recommend the following sizes : iPhone (186px*279px), Android (145px*242px).",
+		"desc" => "Upload your app screenshot for the front SmartPhone for Feature #4. We recommend the following sizes : iPhone (192px*339px), Android (185px*330px).",
 		"id" => "feature_4_screenshot_uploader",
 		"type" => "upload",
 		"class" => "recommended");
 		
 	$options[] = array( "name" => "",
-		"desc" => "Upload your app screenshot for the back Smartphone for Feature #4. We recommend the following sizes : iPhone (186px*279px), Android (145px*242px).",
+		"desc" => "Upload your app screenshot for the back Smartphone for Feature #4. We recommend the following sizes : iPhone (192px*339px), Android (185px*330px).",
 		"id" => "feature_4_back_screenshot_uploader",
 		"type" => "upload");
 		
@@ -413,13 +413,13 @@ function optionsframework_options() {
 		"type" => "textarea");
 	
 	$options[] = array( "name" => "",
-		"desc" => "Upload your app screenshot for the front SmartPhone for Feature #5. We recommend the following sizes : iPhone (186px*279px), Android (145px*242px).",
+		"desc" => "Upload your app screenshot for the front SmartPhone for Feature #5. We recommend the following sizes : iPhone (192px*339px), Android (185px*330px).",
 		"id" => "feature_5_screenshot_uploader",
 		"type" => "upload",
 		"class" => "recommended");
 		
 	$options[] = array( "name" => "",
-		"desc" => "Upload your app screenshot for the back Smartphone for Feature #5. We recommend the following sizes : iPhone (186px*279px), Android (145px*242px).",
+		"desc" => "Upload your app screenshot for the back Smartphone for Feature #5. We recommend the following sizes : iPhone (192px*339px), Android (185px*330px).",
 		"id" => "feature_5_back_screenshot_uploader",
 		"type" => "upload");
 	

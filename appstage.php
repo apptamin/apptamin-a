@@ -42,16 +42,16 @@
 					<?php 
 					if(($front_appstage=='android')){
 							if (of_get_option('app_screenshot_1_uploader')){ ?>
-							<img width="186" height="310" src="<?php echo of_get_option('app_screenshot_1_uploader'); ?>" alt="Home screenshot"/>
+							<img width="192" height="339" src="<?php echo of_get_option('app_screenshot_1_uploader'); ?>" alt="Home screenshot"/>
 						<?php }else{ ?>
-							<img width="186" height="310" src="<?php bloginfo('stylesheet_directory'); ?>/images/screenshots/scr-home-android.jpg" alt="Home screenshot"/>
+							<img width="192" height="339" src="<?php bloginfo('stylesheet_directory'); ?>/images/screenshots/scr-home-android.jpg" alt="Home screenshot"/>
 						<?php 
 							}
 					}else{	
 							if (of_get_option('app_screenshot_1_uploader')){ ?>
-							<img width="186" height="279" src="<?php echo of_get_option('app_screenshot_1_uploader'); ?>" alt="Home screenshot"/>
+							<img width="185" height="330" src="<?php echo of_get_option('app_screenshot_1_uploader'); ?>" alt="Home screenshot"/>
 						<?php }else{ ?>
-							<img width="186" height="279" src="<?php bloginfo('stylesheet_directory'); ?>/images/screenshots/scr-home.jpg" alt="feature-1-scr"/>
+							<img width="185" height="330" src="<?php bloginfo('stylesheet_directory'); ?>/images/screenshots/scr-home.jpg" alt="feature-1-scr"/>
 						<?php 
 							}
 					}	
@@ -63,16 +63,16 @@
 				<?php if($back_appstage!=''){?>
 					<?php if($back_appstage=='android'){
 							if (of_get_option('app_screenshot_2_uploader')){ ?>
-							<img width="155" height="259" src="<?php echo of_get_option('app_screenshot_2_uploader'); ?>" alt="feature-2-scr"/>
+							<img width="160" height="284" src="<?php echo of_get_option('app_screenshot_2_uploader'); ?>" alt="feature-2-scr"/>
 						<?php }else{ ?>
-							<img width="155" height="259" src="<?php bloginfo('stylesheet_directory'); ?>/images/screenshots/scr-home-android.jpg" alt="feature-2-scr"/>
+							<img width="160" height="284" src="<?php bloginfo('stylesheet_directory'); ?>/images/screenshots/scr-home-android.jpg" alt="feature-2-scr"/>
 						<?php } 
 						?>
 					<?php }else{ ?>
 						<?php if (of_get_option('app_screenshot_2_uploader')){ ?>
-							<img width="152" height="228" src="<?php echo of_get_option('app_screenshot_2_uploader'); ?>" alt="feature-2-scr"/>
+							<img width="151" height="270" src="<?php echo of_get_option('app_screenshot_2_uploader'); ?>" alt="feature-2-scr"/>
 						<?php }else{ ?>
-							<img width="152" height="228" src="<?php bloginfo('stylesheet_directory'); ?>/images/screenshots/scr-home.jpg" alt="feature-2-scr"/>
+							<img width="151" height="270" src="<?php bloginfo('stylesheet_directory'); ?>/images/screenshots/scr-home.jpg" alt="feature-2-scr"/>
 						<?php } ?>
 				<?php } }?>
 				</div>

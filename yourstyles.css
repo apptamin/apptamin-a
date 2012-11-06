@@ -35,7 +35,7 @@ We added some of our own styles for the demo. Feel free to edit, remove or keep 
 /* =APP STAGE */
 body.home #app-stage {
 	background: url("images/bg_appstage.jpg") repeat-x scroll center 0 transparent;
-	height:535px;
+	height:555px;
 }
 #scroller{
 	padding-top:30px;

@@ -26,7 +26,7 @@ textarea{
 }
 
 body{
-	background-color:#f5f5f5;
+	background-color:#000000;
 	background: url(images/bg.jpg);
 	color:#555;
 }
@@ -307,7 +307,7 @@ position:relative;
 width:10000px;
 }
 .app-box{
-	min-height:500px;
+	min-height:520px;
 	width:960px;
 	position:relative;
 	/*overflow:hidden;*/
@@ -317,7 +317,7 @@ width:10000px;
 .app-box .feature{
 	left:5px;
 	width:330px;
-	top:20px;
+	top:10px;
 }
 .app-box.app-content-left .feature{
 	left:640px;
@@ -345,7 +345,7 @@ a.app-icon{
 }
 .app-name{
 	padding-right:0px;
-	padding-top:25px;
+	padding-top:15px;
 }
 .app-content{
 	width:600px;
@@ -477,7 +477,7 @@ ul.features li.imgright{
 ul.features li .imgwrap{
 	width:960px;
 	margin:0 auto;
-	height:480px;
+	height:510px;
 	position:relative;
 }
 ul.features li.imgright .imgwrap{
@@ -518,7 +518,7 @@ ul.features li.imgright .imgwrap{
 	background: url(images/device_iphone_front_reflect.png);
 	background-repeat:no-repeat;
 	width:220px;
-	height:500px;
+	height:520px;
 	z-index:3;
 	left:100px;
 }
@@ -529,7 +529,7 @@ ul.features li.imgright .imgwrap{
 	left:0px;
 	display:block;
 	width:180px;
-	height:409px;
+	height:435px;
 	z-index:2;
 }
 .feature .android{
@@ -583,30 +583,30 @@ ul.features li.imgright .imgwrap{
 }
 .feature .iphone img{
 	margin-left: 19px;
-    margin-top: 75px;
+    margin-top: 70px;
 	z-index:9;
 }
 .feature .iphone.back img{
-	margin-left: 15px;
-    margin-top: 62px;
+	margin-left: 16px;
+    margin-top: 58px;
 }
 .feature .android img{
-	margin-left: 56px;
-    margin-top: 55px;
+	margin-left: 51px;
+    margin-top: 40px;
 	z-index:9;
 }
 .android.back img{
-	margin-left: 47px;
-    margin-top: 46px;
+	margin-left: 44px;
+    margin-top: 34px;
 }
 .feature .iphone .glare{
 	position:absolute;
 	background: url(images/glare.png);
 	background-repeat:no-repeat;
-	width:77px;
+	width:87px;
 	height:203px;
-	left: 128px;
-    top: 75px;
+	left: 117px;
+    top: 70px;
 	z-index:10;
 }
 .feature .android .glare{
