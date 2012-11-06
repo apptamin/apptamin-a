@@ -1,0 +1,62 @@
+<?php
+
+    // calling the header.php
+    get_header('home');
+
+    // action hook for placing content above #container
+    thematic_abovecontainer();
+	
+?>
+
+		<div id="container">
+			
+			<?php thematic_abovecontent(); ?>
+	
+			<div id="content">
+				
+				<?php 
+            	
+            	// create the navigation above the content
+            	//thematic_navigation_above();
+				
+            	// calling the widget area 'index-top'
+            	get_sidebar('index-top');
+				
+            	// action hook for placing content above the index loop
+            	thematic_above_indexloop();
+				
+				
+				//calling the features page
+				get_template_part('features');
+				
+				
+            	// action hook for placing content below the index loop
+            	thematic_below_indexloop();
+				
+				
+            	// calling the widget area 'index-bottom'
+            	get_sidebar('index-bottom');
+				
+            	// create the navigation below the content
+            	//thematic_navigation_below();
+            	
+            	?>
+				
+			</div><!-- #content -->
+		
+			<?php thematic_belowcontent(); ?> 
+		
+		</div><!-- #container -->
+
+<?php 
+
+    // action hook for placing content below #container
+    thematic_belowcontainer();
+
+    // calling the standard sidebar 
+   //thematic_sidebar();
+    
+    // calling footer.php
+    get_footer('homepage');
+
+?>

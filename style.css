@@ -1,0 +1,42 @@
+/*   
+Theme Name: Apptamin A Theme
+Theme URI: http://www.apptamin.com/
+Description: An amazing theme for your app. It lets you fully customize your app presentation website without coding a single line, and is optimized to display the needed elements about your app. More info on <a href="http://www.apptamin.com/">Apptamin.com</a>
+Author: <a href="http://www.apptamin.com/">Sylvain Gauchet</a>
+Author URI: http://www.apptamin.com/
+Template: thematic
+Version: 1.25
+License: GNU General Public License
+License URI: license.txt
+Tags: mobile,apps,android,iphone
+.
+The Apptamin A Theme is copyright Sylvain Gauchet http://www.apptamin.com/
+This work, like WordPress, is released under GNU General Public License, version 2 (GPL).
+http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+.
+*/
+
+/* Reset browser defaults */
+@import url('../thematic/library/styles/reset.css');
+
+/* Apply basic typography styles */
+@import url('../thematic/library/styles/typography.css');
+
+/* Apply a basic layout */
+@import url('../thematic/library/layouts/2c-r-fixed.css');
+
+/* Apply basic image styles */
+@import url('../thematic/library/styles/images.css');
+
+/* Apply default theme styles and colors */
+/* It's better to actually copy over default.css into this file (or link to a copy in your child theme) if you're going to do anything outrageous */
+@import url('newstyles.css');
+
+/* Apply custom styles and colors to the Apptamin theme */
+@import url('yourstyles.css');
+
+/* Prepare theme for plugins */
+@import url('../thematic/library/styles/plugins.css');
+
+
+
