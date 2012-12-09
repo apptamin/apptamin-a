@@ -319,19 +319,20 @@ width:10000px;
 	width:330px;
 	top:10px;
 }
+
 .app-box.app-content-left .feature{
 	left:640px;
 }
-.app-box.app-content-left .iphone{
+.app-box.app-content-left .iphone4S,.app-box.app-content-left .iphone5{
 	left:0px;
 }
-.app-box.app-content-left .android{
+.app-box.app-content-left .androidS2,.app-box.app-content-left .androidS3{
 	left:-35px;
 }
-.app-box.app-content-left .iphone.back{
+.app-box.app-content-left .iphone4S.back,.app-box.app-content-left .iphone5.back{
 	left:138px;
 }
-.app-box.app-content-left .android.back{
+.app-box.app-content-left .androidS2.back,.app-box.app-content-left .androidS3.back{
 	left:100px;
 }
 a.app-icon{
@@ -418,6 +419,18 @@ a.itunesdl,a.androiddl{
 
 a.androiddl{
 	margin-left:10px;
+	background: url(images/app-store-buttons-android.png_og.png);
+	background-repeat:no-repeat;
+	display:block;
+	width:172px;
+	height:60px;
+}
+a.itunesdl{
+	background: url(images/app-store-buttons-iphone_og.png);
+	background-repeat:no-repeat;
+	display:block;
+	width:202px;
+	height:60px;
 }
 
 .app-video{
@@ -512,94 +525,84 @@ ul.features li.imgright .imgwrap{
 	position:relative;
 	left:640px;
 }
-
-.feature .iphone{
+/** iPhone 4S display properties **/
+.feature .iphone4S{
 	position:absolute;
-	background: url(images/device_iphone_front_reflect.png);
+	background: url(images/device_iphone4S_front_reflect.png);
 	background-repeat:no-repeat;
 	width:220px;
 	height:520px;
 	z-index:3;
 	left:100px;
 }
-.feature .iphone.back{
-	background: url(images/device_iphone_back_reflect.png);
+.feature .iphone4S.back{
+	background: url(images/device_iphone4S_back_reflect.png);
 	background-repeat:no-repeat;
 	top:50px;
+	left:0px;
+	display:block;
+	width:180px;
+	height:409px;
+	z-index:2;
+}
+.feature .iphone4S img.screenshot{
+	margin-left: 19px;
+    margin-top: 75px;
+	width: 186px;
+	height: 279px;
+	z-index:9;
+}
+.feature .iphone4S.back img{
+	margin-left: 15px;
+    margin-top: 62px;
+	width: 152px;
+	height:228px;
+}
+.feature .iphone4S .glare{
+	position:absolute;
+	background: url(images/glare_iphone4S.png);
+	background-repeat:no-repeat;
+	width:77px;
+	height:203px;
+	left: 128px;
+    top: 75px;
+	z-index:10;
+}
+
+/** iPhone 5 display properties **/
+.feature .iphone5{
+	position:absolute;
+	background: url(images/device_iphone5_front_reflect.png);
+	background-repeat:no-repeat;
+	width:220px;
+	height:520px;
+	z-index:3;
+	left:100px;
+}
+.feature .iphone5.back{
+	background: url(images/device_iphone5_back_reflect.png);
+	background-repeat:no-repeat;
+	top:35px;
 	left:0px;
 	display:block;
 	width:180px;
 	height:435px;
 	z-index:2;
 }
-.feature .android{
-	position:absolute;
-	background: url(images/device_android_front_reflect.png);
-	background-repeat:no-repeat;
-	width:293px;
-	height:480px;
-	z-index:3;
-	left:60px;
-	top:15px;
-}
-.android.back{
-	background: url(images/device_android_back_reflect.png);
-	background-repeat:no-repeat;
-	top:50px;
-	left:-30px;
-	display:block;
-	width:244px;
-	height:400px;
-	z-index:2;
-}
-/** If users chooses only one phone, hide background phone /*/
-.feature.single-phone .iphone.back,
-.feature.single-phone .android.back{
-	display:none;
-}
-.feature.single-phone .iphone{
-	left:40px;
-}
-.feature.single-phone .android{
-	left:5px;
-}
-.imgright .feature .iphone{
-	left:0px;
-}
-.imgright .feature  .android{
-	left:-30px;
-}
-.imgright .feature.single-phone .iphone{
-	left:40px;
-}
-.imgright .feature .iphone.back{
-	left:138px;
-}
-.imgright .feature .android.back{
-	left:100px;
-}
-.imgright .feature.single-phone .android{
-	left:5px;
-}
-.feature .iphone img{
+.feature .iphone5 img.screenshot{
 	margin-left: 19px;
     margin-top: 70px;
+	width: 185px;
+	height: 330px;
 	z-index:9;
 }
-.feature .iphone.back img{
+.feature .iphone5.back img{
 	margin-left: 16px;
     margin-top: 58px;
+	width: 151px;
+	height:270px;
 }
-.feature .android img{
-	margin-left: 51px;
-    margin-top: 40px;
-	z-index:9;
-}
-.android.back img{
-	margin-left: 44px;
-    margin-top: 34px;
-}
-.feature .iphone .glare{
+.feature .iphone5 .glare{
 	position:absolute;
 	background: url(images/glare.png);
 	background-repeat:no-repeat;
@@ -609,9 +612,44 @@ ul.features li.imgright .imgwrap{
     top: 70px;
 	z-index:10;
 }
-.feature .android .glare{
+
+/** Android Samsung Galaxy S2 display properties **/
+.feature .androidS2{
 	position:absolute;
-	background: url(images/glare_android.png);
+	background: url(images/device_androidS2_front_reflect.png);
+	background-repeat:no-repeat;
+	width:293px;
+	height:480px;
+	z-index:3;
+	left:60px;
+	top:15px;
+}
+.androidS2.back{
+	background: url(images/device_androidS2_back_reflect.png);
+	background-repeat:no-repeat;
+	top:50px;
+	left:-30px;
+	display:block;
+	width:244px;
+	height:400px;
+	z-index:2;
+}
+.feature .androidS2 img.screenshot{
+	margin-left: 56px;
+    margin-top: 55px;
+	width:186px;
+	height:310px;
+	z-index:9;
+}
+.androidS2.back img.screenshot{
+	margin-left: 47px;
+    margin-top: 46px;
+	width:155px;
+	height:259px;
+}
+.feature .androidS2 .glare{
+	position:absolute;
+	background: url(images/glare_androidS2.png);
 	background-repeat:no-repeat;
 	width:105px;
 	height:408px;
@@ -619,6 +657,95 @@ ul.features li.imgright .imgwrap{
     top: 4px;
 	z-index:10;
 }
+
+/** Android Samsung Galaxy S3 display properties **/
+.feature .androidS3{
+	position:absolute;
+	background: url(images/device_androidS3_front_reflect.png);
+	background-repeat:no-repeat;
+	width:293px;
+	height:480px;
+	z-index:3;
+	left:60px;
+	top:15px;
+}
+.androidS3.back{
+	background: url(images/device_androidS3_back_reflect.png);
+	background-repeat:no-repeat;
+	top:50px;
+	left:-30px;
+	display:block;
+	width:244px;
+	height:400px;
+	z-index:2;
+}
+.feature .androidS3 img.screenshot{
+	margin-left: 51px;
+    margin-top: 40px;
+	width: 192px;
+	height:339px;
+	z-index:9;
+}
+.androidS3.back img.screenshot{
+	margin-left: 43px;
+    margin-top: 34px;
+	width: 160px;
+	height:284px;
+}
+.feature .androidS3 .glare{
+	position:absolute;
+	background: url(images/glare_androidS3.png);
+	background-repeat:no-repeat;
+	width:105px;
+	height:408px;
+	left: 149px;
+    top: 4px;
+	z-index:10;
+}
+
+
+
+/** If users chooses only one phone, hide background phone **/
+.feature.single-phone .iphone4S.back,
+.feature.single-phone .iphone5.back
+.feature.single-phone .androidS2.back,
+.feature.single-phone .androidS3.back{
+	display:none;
+}
+.feature.single-phone .iphone4S,
+.feature.single-phone .iphone5{
+	left:40px;
+}
+.feature.single-phone .androidS2,
+.feature.single-phone .androidS3{
+	left:5px;
+}
+.imgright .feature .iphone4S,
+.imgright .feature .iphone5{
+	left:0px;
+}
+.imgright .feature  .androidS2,
+.imgright .feature  .androidS3{
+	left:-30px;
+}
+.imgright .feature.single-phone .iphone4S,
+.imgright .feature.single-phone .iphone5{
+	left:40px;
+}
+.imgright .feature .iphone4S.back,
+.imgright .feature .iphone5.back{
+	left:138px;
+}
+.imgright .feature .androidS2.back,
+.imgright .feature .androidS3.back{
+	left:100px;
+}
+.imgright .feature.single-phone .androidS2,
+.imgright .feature.single-phone .androidS3{
+	left:5px;
+}
+
+
 .features h3{
 	font-size:2.1em;
 	line-height:36px;

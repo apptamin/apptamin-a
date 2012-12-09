@@ -19,82 +19,56 @@
 	$i++;
 	$single="";
 	if(of_get_option('feature_'.$i.'_checkbox')){
-	?>
-	<li class="<?php echo of_get_option('feature_'.$i.'_images');?>">
+	
+	if($i>1){?>
+	<hr class="styled"/>
+	<?php } ?>
+	<li class="<?php echo of_get_option('feature_'.$i.'_images').' '.'feature'.$i;?>">
 		<div class="imgwrap">
-			<?php //Check for which phone(s) to display
-				$smartphone=of_get_option('feature_'.$i.'_smartphones_radio');
-				$back='';
-				switch ($smartphone)
-					{
-					case "iphone":
-						$single='single-phone';
-						$front='iphone';
-						break;
-					case "android":
-						$single='single-phone';
-						$front='android';
-						break;
-					case "android_android":
-						$front='android';
-						$back='android';
-						break;
-					case "iphone_android":
-						$front='iphone';
-						$back='android';
-						break;
-					case "android_iphone":
-						$front='android';
-						$back='iphone';
-						break;
-					case "iphone_iphone":
-						$front='iphone';
-						$back='iphone';
-						break;
-					default:
-						$single='single-phone';
-						$front='iphone';
-						break;
+			<?php 				
+				$device_front_appstage=of_get_option('feature_'.$i.'_devices_front_radio');
+				$device_back_appstage=of_get_option('feature_'.$i.'_devices_back_radio');
+				
+				if ($device_back_appstage=="none"){
+					$single='single-phone';
+				}else{
+					$single='';
 				}
 			?>
 			<div class="feature <?php echo $single;?>">
 				<?php //$smartphone=of_get_option('feature_'.$i.'_smartphones_radio');?>
-				<div class="<?php echo $front; ?>">
+				<div class="<?php echo $device_front_appstage;?>">
 				<?php 
-					if(($front=='android')){
-							if (of_get_option('feature_'.$i.'_screenshot_uploader')){ ?>
-							<img width="192" height="339" src="<?php echo of_get_option('feature_'.$i.'_screenshot_uploader'); ?>" alt="<?php echo 'Feature '.$i.' front screenshot';?>"/>
+					if (of_get_option('feature_'.$i.'_screenshot_uploader')){ ?>
+							<img class="screenshot" src="<?php echo of_get_option('feature_'.$i.'_screenshot_uploader'); ?>" alt="<?php echo 'Feature '.$i.' front screenshot';?>"/>
 						<?php }else{ ?>
-							<img width="192" height="339" src="<?php bloginfo('stylesheet_directory'); ?>/images/screenshots/scr-front-android.jpg" alt="Home screenshot"/>
+							<img class="screenshot" src="<?php bloginfo('stylesheet_directory'); ?>/images/screenshots/scr-front-android.jpg" alt="Home screenshot"/>
 						<?php 
 							} 
-					}else{	
+					/*}else{	
 							if (of_get_option('feature_'.$i.'_screenshot_uploader')){ ?>
 							<img width="185" height="330" src="<?php echo of_get_option('feature_'.$i.'_screenshot_uploader'); ?>" alt="<?php echo 'Feature '.$i.' front screenshot';?>"/>
 						<?php }else{ ?>
 							<img width="185" height="330" src="<?php bloginfo('stylesheet_directory'); ?>/images/screenshots/scr-front.jpg" alt="feature-1-scr"/>
 						<?php 
 							} 
-					}	
+					}	*/
 					?>
 					<div class="glare"></div>
 				</div>
-				<div class="<?php echo $back; ?> back">
-					<?php if($back!=''){?>
-					<?php if($back=="android"){
-							if(of_get_option('feature_'.$i.'_back_screenshot_uploader')){?>
-								<img width="160" height="284" src="<?php echo of_get_option('feature_'.$i.'_back_screenshot_uploader')?>"/>
+				<?php 
+				if($device_back_appstage!='none'){?>
+					<div class="<?php echo $device_back_appstage;?> back">
+							<?php if(of_get_option('feature_'.$i.'_back_screenshot_uploader')){?>
+								<img class="screenshot" src="<?php echo of_get_option('feature_'.$i.'_back_screenshot_uploader')?>"/>
 							<?php }else{ ?>
-								<img width="160" height="284" src="<?php bloginfo('stylesheet_directory'); ?>/images/screenshots/scr-back-android.jpg" alt="<?php echo 'Feature '.$i.' back screenshot';?>"/>
+								<img class="screenshot" src="<?php bloginfo('stylesheet_directory'); ?>/images/screenshots/scr-back-android.jpg" alt="<?php echo 'Feature '.$i.' back screenshot';?>"/>
 							<?php }
-						}else{
-							if(of_get_option('feature_'.$i.'_back_screenshot_uploader')){?>
-								<img width="151" height="270" src="<?php echo of_get_option('feature_'.$i.'_back_screenshot_uploader')?>"/>
-							<?php }else{ ?>
-								<img width="151" height="270" src="<?php bloginfo('stylesheet_directory'); ?>/images/screenshots/scr-back.jpg" alt="<?php echo 'Feature '.$i.' back screenshot';?>"/>
-							<?php }
-						}}?>
-				</div>
+							?>
+					</div>
+				<?php 
+				}	
+				?>
 			</div>
 			<div class="features-txt">
 				<h3><?php echo of_get_option('feature_'.$i.'_text');?></h3>
@@ -102,9 +76,8 @@
 			</div>
 		</div>
 	</li>
-	<?php if(i<5){?>
-	<hr class="styled"/>
-	<?php }
+
+	<?php 
 		} 
 	}
 	

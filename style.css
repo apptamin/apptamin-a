@@ -1,5 +1,5 @@
 /*   
-Theme Name: Apptamin A5 Theme
+Theme Name: Apptamin A Theme
 Theme URI: http://www.apptamin.com/
 Description: An amazing theme for your app. It lets you fully customize your app presentation website without coding a single line, and is optimized to display the needed elements about your app. More info on <a href="http://www.apptamin.com/">Apptamin.com</a>
 Author: <a href="http://www.apptamin.com/">Sylvain Gauchet</a>
@@ -33,7 +33,7 @@ http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 @import url('newstyles.css');
 
 /* Apply custom styles and colors to the Apptamin theme */
-@import url('yourstyles.css');
+@import url('yourstyles-example2.css');
 
 /* Prepare theme for plugins */
 @import url('../thematic/library/styles/plugins.css');

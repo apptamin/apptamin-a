@@ -26,7 +26,9 @@ function optionsframework_options() {
 
 	// Radio data
 	//$smartphones_array = array("iphone" => "iphone","android" => "android");
-	$smartphones_array = array("iphone" => "iPhone", "android" =>"Android phone","iphone_iphone" => "2 iPhones", "android_android" => "2 Android phones", "iphone_android" => "Front: iPhone, back: Android phone","android_iphone" => "Front: Android phone, back: iPhone");
+	$smartphones_array = array("none" => "None", "iphone" => "iPhone 4S", "iphone5" => "iPhone 5", "android" =>"Android (Galaxy S2)", "android2" => "Android (Galaxy S3)");
+	$devices_front_array = array("none" => "None", "iphone4S" => "iPhone 4S", "iphone5" => "iPhone 5", "androidS2" =>"Android (Samsung Galaxy S2)", "androidS3" => "Android (Samsung Galaxy S3)");
+	$devices_back_array = $devices_front_array;
 
 	// Multicheck Array
 	$multicheck_array = array("one" => "iTunes Store", "two" => "Google Play (Android Market)");
@@ -87,12 +89,6 @@ function optionsframework_options() {
 		"std" => "",
 		"type" => "text");
 		
-	/*		
-	$options[] = array( "name" => "App Description",
-		"desc" => "This is where you explain what your app does. If you need to use html/php, you can replace with your own code in appstage.php",
-		"id" => "app_description_editor",
-		"type" => "editor");
-	*/
 	$options[] = array( "name" => "App Description",
 		"desc" => "This is where you explain what your app does. You can use basic HTML stuff.",
 		"id" => "app_description_textarea",
@@ -161,22 +157,35 @@ function optionsframework_options() {
 			'app-content-left' => $imagepath . 'phone_right.png')
 	);
 	
-	$options[] = array( "name" => "Smartphone(s) to use",
-		"desc" => "Choose if you want the iPhone or the Android phone to be displayed in front. Ignore if your app is for only one OS.",
-		"id" => "smartphones_radio",
-		"std" => "iphone",
+		
+	$options[] = array( "name" => "Front Device",
+		"desc" => "Choose the device you want in the front.",
+		"id" => "devices_front_radio",
+		"std" => "iphone5",
 		"type" => "radio",
-		"options" => $smartphones_array);	
+		"options" => $devices_front_array);	
+		
+	$options[] = array(
+		"desc" => "We don't recommend mixing iPhone 4S and iPhone 5. It doesn't make sense AND the position of the phones won't look that good.",
+		"type" => "info",
+		"class" => "special first");
+		
+	$options[] = array( "name" => "Back Device",
+		"desc" => "Choose the device you want in the back.",
+		"id" => "devices_back_radio",
+		"std" => "none",
+		"type" => "radio",
+		"options" => $devices_back_array);
 		
 			
-	$options[] = array( "name" => "App Screenshot (front smartphone)",
-		"desc" => "Upload your app screenshot for the front SmartPhone. We recommend .jpg files with the following sizes : iPhone (192px*339px), Android (186px*310px).",
+	$options[] = array( "name" => "App Screenshot (front device)",
+		"desc" => "Upload your app screenshot for the front device. We recommend .jpg files with the following sizes : iPhone 4S (186px*279px), iPhone 5(185px*330px), Samsung Galaxy S2 (186px*310px), Samsung Galaxy S3 (192px*339px).",
 		"id" => "app_screenshot_1_uploader",
 		"type" => "upload",
 		"class" => "recommended");
 		
-	$options[] = array( "name" => "App Screenshot (back smartphone - not needed if only 1 phone displayed)",
-		"desc" => "Upload your app screenshot for the back Smartphone. We recommend .jpg files with the following sizes : iPhone (192px*339px), Android (186px310px).",
+	$options[] = array( "name" => "App Screenshot (back device - not needed if 'none' selected as back device)",
+		"desc" => "Upload your app screenshot for the back device. We recommend .jpg files with the following sizes : iPhone 4S (186px*279px), iPhone 5(185px*330px), Samsung Galaxy S2 (186px*310px), Samsung Galaxy S3 (192px*339px).",
 		"id" => "app_screenshot_2_uploader",
 		"type" => "upload");
 
@@ -191,7 +200,9 @@ function optionsframework_options() {
 		"desc" => "These options will let you define the app features you want to highlight. If you don't need that many, just don't check the boxes !",
 		"type" => "info",
 		"class" => "special first");
-		
+	
+	
+	/* Feature #1 */	
 	$options[] = array( "name" => "Feature #1",
 		"desc" => "Check the box if you want this feature to be displayed",
 		"id" => "feature_1_checkbox",
@@ -208,12 +219,24 @@ function optionsframework_options() {
 			'imgright' => $imagepath . 'phone_right.png')
 	);
 	
-	$options[] = array( "name" => "Smartphone(s) to use",
-		"desc" => "Choose if you want the iPhone or the Android phone to be displayed.",
-		"id" => "feature_1_smartphones_radio",
-		"std" => "iphone_iphone",
+	$options[] = array( "name" => "Front Device",
+		"desc" => "Choose the device you want in the front.",
+		"id" => "feature_1_devices_front_radio",
+		"std" => "iphone5",
 		"type" => "radio",
-		"options" => $smartphones_array);
+		"options" => $devices_front_array);	
+		
+	$options[] = array(
+		"desc" => "We don't recommend mixing iPhone 4S and iPhone 5. It doesn't make sense AND the position of the phones won't look that good.",
+		"type" => "info",
+		"class" => "special first");
+		
+	$options[] = array( "name" => "Back Device",
+		"desc" => "Choose the device you want in the back.",
+		"id" => "feature_1_devices_back_radio",
+		"std" => "none",
+		"type" => "radio",
+		"options" => $devices_back_array);
 		
 	$options[] = array(
 		"desc" => "Put the feature name here. Try to be as catchy and understandable as possible : no technical stuff.",
@@ -228,16 +251,17 @@ function optionsframework_options() {
 		"type" => "textarea");
 	
 	$options[] = array( "name" => "",
-		"desc" => "Upload your app screenshot for the front SmartPhone for Feature #1. We recommend the following sizes : iPhone (192px*339px), Android (185px*330px).",
+		"desc" => "Upload your app screenshot for the front device for Feature #1. We recommend .jpg files with the following sizes : iPhone 4S (186px*279px), iPhone 5(185px*330px), Samsung Galaxy S2 (186px*310px), Samsung Galaxy S3 (192px*339px).",
 		"id" => "feature_1_screenshot_uploader",
 		"type" => "upload",
 		"class" => "recommended");
 		
 	$options[] = array( "name" => "",
-		"desc" => "Upload your app screenshot for the back Smartphone for Feature #1. We recommend the following sizes : iPhone (192px*339px), Android (185px*330px).",
+		"desc" => "Upload your app screenshot for the back device for Feature #1. We recommend .jpg files with the following sizes : iPhone 4S (186px*279px), iPhone 5(185px*330px), Samsung Galaxy S2 (186px*310px), Samsung Galaxy S3 (192px*339px).",
 		"id" => "feature_1_back_screenshot_uploader",
 		"type" => "upload");
 	
+	/* Feature #2 */	
 	$options[] = array( "name" => "Feature #2",
 		"desc" => "Check the box if you want this feature to be displayed",
 		"id" => "feature_2_checkbox",
@@ -254,12 +278,24 @@ function optionsframework_options() {
 			'imgright' => $imagepath . 'phone_right.png')
 	);
 	
-	$options[] = array( "name" => "Smartphone to use",
-		"desc" => "Choose if you want the iPhone or the Android phone to be displayed.",
-		"id" => "feature_2_smartphones_radio",
-		"std" => "iphone",
+	$options[] = array( "name" => "Front Device",
+		"desc" => "Choose the device you want in the front.",
+		"id" => "feature_2_devices_front_radio",
+		"std" => "iphone5",
 		"type" => "radio",
-		"options" => $smartphones_array);
+		"options" => $devices_front_array);	
+		
+	$options[] = array(
+		"desc" => "We don't recommend mixing iPhone 4S and iPhone 5. It doesn't make sense AND the position of the phones won't look that good.",
+		"type" => "info",
+		"class" => "special first");
+		
+	$options[] = array( "name" => "Back Device",
+		"desc" => "Choose the device you want in the back.",
+		"id" => "feature_2_devices_back_radio",
+		"std" => "none",
+		"type" => "radio",
+		"options" => $devices_back_array);
 		
 	$options[] = array( "name" => "",
 		"desc" => "Put the feature name. Try to be as catchy and understandable as possible : no technical stuff.",
@@ -274,16 +310,17 @@ function optionsframework_options() {
 		"type" => "textarea");
 	
 	$options[] = array( "name" => "",
-		"desc" => "Upload your app screenshot for the front SmartPhone for Feature #2. We recommend the following sizes : iPhone (192px*339px), Android (185px*330px).",
+		"desc" => "Upload your app screenshot for the front device for Feature #2. We recommend .jpg files with the following sizes : iPhone 4S (186px*279px), iPhone 5(185px*330px), Samsung Galaxy S2 (186px*310px), Samsung Galaxy S3 (192px*339px).",
 		"id" => "feature_2_screenshot_uploader",
 		"type" => "upload",
 		"class" => "recommended");
 		
 	$options[] = array( "name" => "",
-		"desc" => "Upload your app screenshot for the back Smartphone for Feature #2. We recommend the following sizes : iPhone (192px*339px), Android (185px*330px).",
+		"desc" => "Upload your app screenshot for the back device for Feature #2. We recommend .jpg files with the following sizes : iPhone 4S (186px*279px), iPhone 5(185px*330px), Samsung Galaxy S2 (186px*310px), Samsung Galaxy S3 (192px*339px).",
 		"id" => "feature_2_back_screenshot_uploader",
 		"type" => "upload");
-		
+	
+	/* Feature #3 */	
 	$options[] = array( "name" => "Feature #3",
 		"desc" => "Check the box if you want this feature to be displayed",
 		"id" => "feature_3_checkbox",
@@ -300,13 +337,24 @@ function optionsframework_options() {
 			'imgright' => $imagepath . 'phone_right.png')
 	);
 		
-	
-	$options[] = array( "name" => "Smartphone to use",
-		"desc" => "Choose if you want the iPhone or the Android phone to be displayed.",
-		"id" => "feature_3_smartphones_radio",
-		"std" => "iphone",
+	$options[] = array( "name" => "Front Device",
+		"desc" => "Choose the device you want in the front.",
+		"id" => "feature_3_devices_front_radio",
+		"std" => "iphone5",
 		"type" => "radio",
-		"options" => $smartphones_array);
+		"options" => $devices_front_array);	
+		
+	$options[] = array(
+		"desc" => "We don't recommend mixing iPhone 4S and iPhone 5. It doesn't make sense AND the position of the phones won't look that good.",
+		"type" => "info",
+		"class" => "special first");
+		
+	$options[] = array( "name" => "Back Device",
+		"desc" => "Choose the device you want in the back.",
+		"id" => "feature_3_devices_back_radio",
+		"std" => "none",
+		"type" => "radio",
+		"options" => $devices_back_array);
 	
 	$options[] = array( "name" => "",
 		"desc" => "Put the feature name. Try to be as catchy and understandable as possible : no technical stuff.",
@@ -321,16 +369,17 @@ function optionsframework_options() {
 		"type" => "textarea");
 	
 	$options[] = array( "name" => "",
-		"desc" => "Upload your app screenshot for the front SmartPhone for Feature #3. We recommend the following sizes : iPhone (192px*339px), Android (185px*330px).",
+		"desc" => "Upload your app screenshot for the front device for Feature #3. We recommend .jpg files with the following sizes : iPhone 4S (186px*279px), iPhone 5(185px*330px), Samsung Galaxy S2 (186px*310px), Samsung Galaxy S3 (192px*339px).",
 		"id" => "feature_3_screenshot_uploader",
 		"type" => "upload",
 		"class" => "recommended");
 		
 	$options[] = array( "name" => "",
-		"desc" => "Upload your app screenshot for the back Smartphone for Feature #3. We recommend the following sizes : iPhone (192px*339px), Android (185px*330px).",
+		"desc" => "Upload your app screenshot for the back device for Feature #3. We recommend .jpg files with the following sizes : iPhone 4S (186px*279px), iPhone 5(185px*330px), Samsung Galaxy S2 (186px*310px), Samsung Galaxy S3 (192px*339px).",
 		"id" => "feature_3_back_screenshot_uploader",
 		"type" => "upload");
-		
+	
+	/* Feature #4 */	
 	$options[] = array( "name" => "Feature #4",
 		"desc" => "Check the box if you want this feature to be displayed",
 		"id" => "feature_4_checkbox",
@@ -346,13 +395,24 @@ function optionsframework_options() {
 			'imgleft' => $imagepath . 'phone_left.png',
 			'imgright' => $imagepath . 'phone_right.png')
 	);
-	
-	$options[] = array( "name" => "Smartphone to use",
-		"desc" => "Choose if you want the iPhone or the Android phone to be displayed.",
-		"id" => "feature_4_smartphones_radio",
-		"std" => "iphone",
+	$options[] = array( "name" => "Front Device",
+		"desc" => "Choose the device you want in the front.",
+		"id" => "feature_4_devices_front_radio",
+		"std" => "iphone5",
 		"type" => "radio",
-		"options" => $smartphones_array);
+		"options" => $devices_front_array);	
+		
+	$options[] = array(
+		"desc" => "We don't recommend mixing iPhone 4S and iPhone 5. It doesn't make sense AND the position of the phones won't look that good.",
+		"type" => "info",
+		"class" => "special first");
+		
+	$options[] = array( "name" => "Back Device",
+		"desc" => "Choose the device you want in the back.",
+		"id" => "feature_4_devices_back_radio",
+		"std" => "none",
+		"type" => "radio",
+		"options" => $devices_back_array);
 	
 	$options[] = array( "name" => "",
 		"desc" => "Put the feature name. Try to be as catchy and understandable as possible : no technical stuff.",
@@ -367,16 +427,17 @@ function optionsframework_options() {
 		"type" => "textarea");
 	
 	$options[] = array( "name" => "",
-		"desc" => "Upload your app screenshot for the front SmartPhone for Feature #4. We recommend the following sizes : iPhone (192px*339px), Android (185px*330px).",
+		"desc" => "Upload your app screenshot for the front device for Feature #4. We recommend .jpg files with the following sizes : iPhone 4S (186px*279px), iPhone 5(185px*330px), Samsung Galaxy S2 (186px*310px), Samsung Galaxy S3 (192px*339px).",
 		"id" => "feature_4_screenshot_uploader",
 		"type" => "upload",
 		"class" => "recommended");
 		
 	$options[] = array( "name" => "",
-		"desc" => "Upload your app screenshot for the back Smartphone for Feature #4. We recommend the following sizes : iPhone (192px*339px), Android (185px*330px).",
+		"desc" => "Upload your app screenshot for the back device for Feature #4. We recommend .jpg files with the following sizes : iPhone 4S (186px*279px), iPhone 5(185px*330px), Samsung Galaxy S2 (186px*310px), Samsung Galaxy S3 (192px*339px).",
 		"id" => "feature_4_back_screenshot_uploader",
 		"type" => "upload");
-		
+	
+	/* Feature #5 */	
 	$options[] = array( "name" => "Feature #5",
 		"desc" => "Check the box if you want this feature to be displayed",
 		"id" => "feature_5_checkbox",
@@ -393,12 +454,24 @@ function optionsframework_options() {
 			'imgright' => $imagepath . 'phone_right.png')
 	);
 		
-	$options[] = array( "name" => "Smartphone to use",
-		"desc" => "Choose if you want the iPhone or the Android phone to be displayed.",
-		"id" => "feature_5_smartphones_radio",
-		"std" => "iphone",
+	$options[] = array( "name" => "Front Device",
+		"desc" => "Choose the device you want in the front.",
+		"id" => "feature_5_devices_front_radio",
+		"std" => "iphone5",
 		"type" => "radio",
-		"options" => $smartphones_array);
+		"options" => $devices_front_array);	
+		
+	$options[] = array(
+		"desc" => "We don't recommend mixing iPhone 4S and iPhone 5. It doesn't make sense AND the position of the phones won't look that good.",
+		"type" => "info",
+		"class" => "special first");
+		
+	$options[] = array( "name" => "Back Device",
+		"desc" => "Choose the device you want in the back.",
+		"id" => "feature_5_devices_back_radio",
+		"std" => "none",
+		"type" => "radio",
+		"options" => $devices_back_array);
 		
 	$options[] = array( "name" => "",
 		"desc" => "Put the feature name. Try to be as catchy and understandable as possible : no technical stuff.",
@@ -413,13 +486,13 @@ function optionsframework_options() {
 		"type" => "textarea");
 	
 	$options[] = array( "name" => "",
-		"desc" => "Upload your app screenshot for the front SmartPhone for Feature #5. We recommend the following sizes : iPhone (192px*339px), Android (185px*330px).",
+		"desc" => "Upload your app screenshot for the front device for Feature #5. We recommend .jpg files with the following sizes : iPhone 4S (186px*279px), iPhone 5(185px*330px), Samsung Galaxy S2 (186px*310px), Samsung Galaxy S3 (192px*339px).",
 		"id" => "feature_5_screenshot_uploader",
 		"type" => "upload",
 		"class" => "recommended");
 		
 	$options[] = array( "name" => "",
-		"desc" => "Upload your app screenshot for the back Smartphone for Feature #5. We recommend the following sizes : iPhone (192px*339px), Android (185px*330px).",
+		"desc" => "Upload your app screenshot for the back device for Feature #5. We recommend .jpg files with the following sizes : iPhone 4S (186px*279px), iPhone 5(185px*330px), Samsung Galaxy S2 (186px*310px), Samsung Galaxy S3 (192px*339px).",
 		"id" => "feature_5_back_screenshot_uploader",
 		"type" => "upload");
 	

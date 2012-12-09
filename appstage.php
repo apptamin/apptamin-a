@@ -2,80 +2,37 @@
 	<div id="scroller-content">
 		<div class="app-box <?php echo of_get_option('appstage_images');?>">		
 			<?php //Check for which phone(s) to display
-				$smartphone_appstage=of_get_option('smartphones_radio');
-
-				$back_appstage='';
-				switch ($smartphone_appstage)
-					{
-					case "iphone":
-						$single_appstage='single-phone';
-						$front_appstage='iphone';
-						break;
-					case "android":
-						$single_appstage='single-phone';
-						$front_appstage='android';
-						break;
-					case "android_android":
-						$front_appstage='android';
-						$back_appstage='android';
-						break;
-					case "iphone_android":
-						$front_appstage='iphone';
-						$back_appstage='android';
-						break;
-					case "android_iphone":
-						$front_appstage='android';
-						$back_appstage='iphone';
-						break;
-					case "iphone_iphone":
-						$front_appstage='iphone';
-						$back_appstage='iphone';
-						break;
-					default:
-						$single_appstage='single-phone';
-						$front_appstage='iphone';
-						break;
+				$device_front_appstage=of_get_option('devices_front_radio');
+				$device_back_appstage=of_get_option('devices_back_radio');
+				
+				if ($device_back_appstage=="none"){
+					$single_appstage='single-phone';
+				}else{
+					$single_appstage='';
 				}
 			?>
 			<div class="feature <?php echo $single_appstage;?>">
-				<div class="<?php echo $front_appstage;?>">
+				<div class="<?php echo $device_front_appstage;?>">
 					<?php 
-					if(($front_appstage=='android')){
-							if (of_get_option('app_screenshot_1_uploader')){ ?>
-							<img width="192" height="339" src="<?php echo of_get_option('app_screenshot_1_uploader'); ?>" alt="Home screenshot"/>
-						<?php }else{ ?>
-							<img width="192" height="339" src="<?php bloginfo('stylesheet_directory'); ?>/images/screenshots/scr-home-android.jpg" alt="Home screenshot"/>
-						<?php 
-							}
-					}else{	
-							if (of_get_option('app_screenshot_1_uploader')){ ?>
-							<img width="185" height="330" src="<?php echo of_get_option('app_screenshot_1_uploader'); ?>" alt="Home screenshot"/>
-						<?php }else{ ?>
-							<img width="185" height="330" src="<?php bloginfo('stylesheet_directory'); ?>/images/screenshots/scr-home.jpg" alt="feature-1-scr"/>
-						<?php 
-							}
-					}	
+
+						if (of_get_option('app_screenshot_1_uploader')){ ?>
+						<img class="screenshot" src="<?php echo of_get_option('app_screenshot_1_uploader'); ?>" alt="Home screenshot"/>
+					<?php }else{ ?>
+						<img class="screenshot" src="<?php bloginfo('stylesheet_directory'); ?>/images/screenshots/scr-home.jpg" alt="feature-1-scr"/>
+					<?php 
+						}
 					?>
 					<div class="glare"></div>
 				</div>
-
-				<div class="<?php echo $back_appstage;?> back">
-				<?php if($back_appstage!=''){?>
-					<?php if($back_appstage=='android'){
-							if (of_get_option('app_screenshot_2_uploader')){ ?>
-							<img width="160" height="284" src="<?php echo of_get_option('app_screenshot_2_uploader'); ?>" alt="feature-2-scr"/>
-						<?php }else{ ?>
-							<img width="160" height="284" src="<?php bloginfo('stylesheet_directory'); ?>/images/screenshots/scr-home-android.jpg" alt="feature-2-scr"/>
-						<?php } 
-						?>
-					<?php }else{ ?>
+				<?php if($device_back_appstage!='none'){?>
+				<div class="<?php echo $device_back_appstage;?> back">
 						<?php if (of_get_option('app_screenshot_2_uploader')){ ?>
-							<img width="151" height="270" src="<?php echo of_get_option('app_screenshot_2_uploader'); ?>" alt="feature-2-scr"/>
+							<img class="screenshot" src="<?php echo of_get_option('app_screenshot_2_uploader'); ?>" alt="feature-2-scr"/>
 						<?php }else{ ?>
-							<img width="151" height="270" src="<?php bloginfo('stylesheet_directory'); ?>/images/screenshots/scr-home.jpg" alt="feature-2-scr"/>
+							<img class="screenshot" src="<?php bloginfo('stylesheet_directory'); ?>/images/screenshots/scr-home.jpg" alt="feature-2-scr"/>
 						<?php } ?>
-				<?php } }?>
 				</div>
+				<?php }?>
 			</div>
 			<div class="app-content">
 				<div class="app-name">
@@ -122,12 +79,10 @@
 				<?php }else{ ?>
 					<div class="download-buttons">
 						<?php if(of_get_option('app_android_store_checkbox')){ ?>
-							<a class="androiddl" target="_blank" href="<?php echo of_get_option('app_android_store_text');?>"  title="<?php echo _e('Download our Android app','apptamin-text-title');?>">
-								<img height="70" src="<?php bloginfo('stylesheet_directory'); ?>/images/app-store-buttons-android.png" alt="Android App on Google Play"/>
-							</a>
+							<a class="androiddl" target="_blank" href="<?php echo of_get_option('app_android_store_text');?>"  title="<?php echo _e('Download our Android app','apptamin-text-title');?>"></a>
 						<?php } ?>
 						<?php if(of_get_option('app_itunes_store_checkbox')){ ?>
-							<a class="itunesdl" target="_blank" href="<?php echo of_get_option('app_itunes_store_text');?>"  title="<?php echo _e('Download our iPhone app','apptamin-text-title');?>"><img height="70" src="<?php bloginfo('stylesheet_directory'); ?>/images/app-store-buttons-iphone.png" alt="App store"/></a>
+							<a class="itunesdl" target="_blank" href="<?php echo of_get_option('app_itunes_store_text');?>"  title="<?php echo _e('Download our iPhone app','apptamin-text-title');?>"></a>
 						<?php } ?>
 					</div>
 				<?php } ?>
