@@ -23,6 +23,15 @@ Q: I installed the theme and it kinda works but many things don't display. Why?
 A: I don't know why. But it seems that you have to go to the Appearance -> Widgets 
 in the admin section before the theme displays correctly.
 
+
+Q: I know CSS and would like to create my own awesome design. How do I do that?
+A: You can either create your own yourstyles.css file (and modify styles.css so it uses it)
+or modify one of the 2 examples we provided (yourstyles-example1.css or yourstyles-example2.css)
+
+Q: How can I change the favicon (the icon in the browser title bar)?
+A: Create your own image, favicon.png for example, rename it favicon.ico and replace the one 
+that is currently in the images/ folder.
+
 Q: How to create multiple pages for showcasing my apps?
 A: I don't know, and that's one of the reason the project is on GitHub:
 so people better at coding than me can improve the theme.
