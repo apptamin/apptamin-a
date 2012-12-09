@@ -91,7 +91,7 @@ body.home #app-stage {
 	border:1px solid #1b69a1;
 }
 .download-buttons {
-	padding-top:0px;
+	padding-top:50px;
 }
 
 
@@ -135,11 +135,11 @@ hr.styled {
 ul.features li{
 	padding-top:50px;
 }
-ul.features li.feature1{
+ul.features li.feature2{
 	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1) inset;
 	background:#F7F5F2;
 }
-ul.features li.feature3{
+ul.features li.feature5{
 	background-color: #EDEAE5;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset;
 }

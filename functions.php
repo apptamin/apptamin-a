@@ -219,6 +219,7 @@ function apptamin_head_css() {
 				}
 				if(!empty($background)){
 					$output .= "body {" . $background . "}\n";
+					$output .= "body.home {" . $background . "}\n";
 				}
 			}
 		
