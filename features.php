@@ -42,7 +42,7 @@
 					if (of_get_option('feature_'.$i.'_screenshot_uploader')){ ?>
 							<img class="screenshot" src="<?php echo of_get_option('feature_'.$i.'_screenshot_uploader'); ?>" alt="<?php echo 'Feature '.$i.' front screenshot';?>"/>
 						<?php }else{ ?>
-							<img class="screenshot" src="<?php bloginfo('stylesheet_directory'); ?>/images/screenshots/scr-front-android.jpg" alt="Home screenshot"/>
+							<img class="screenshot" src="<?php bloginfo('stylesheet_directory'); ?>/images/screenshots/scr-placeholder.jpg" alt="Home screenshot"/>
 						<?php 
 							} 
 					/*}else{	
@@ -62,7 +62,7 @@
 							<?php if(of_get_option('feature_'.$i.'_back_screenshot_uploader')){?>
 								<img class="screenshot" src="<?php echo of_get_option('feature_'.$i.'_back_screenshot_uploader')?>"/>
 							<?php }else{ ?>
-								<img class="screenshot" src="<?php bloginfo('stylesheet_directory'); ?>/images/screenshots/scr-back-android.jpg" alt="<?php echo 'Feature '.$i.' back screenshot';?>"/>
+								<img class="screenshot" src="<?php bloginfo('stylesheet_directory'); ?>/images/screenshots/scr-placeholder.jpg" alt="<?php echo 'Feature '.$i.' back screenshot';?>"/>
 							<?php }
 							?>
 					</div>

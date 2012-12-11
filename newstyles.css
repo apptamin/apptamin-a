@@ -593,18 +593,18 @@ ul.features li.imgright .imgwrap{
 	margin-left: 19px;
     margin-top: 70px;
 	width: 185px;
-	height: 330px;
+	height: 328px;
 	z-index:9;
 }
 .feature .iphone5.back img{
 	margin-left: 16px;
     margin-top: 58px;
 	width: 151px;
-	height:270px;
+	height:268px;
 }
 .feature .iphone5 .glare{
 	position:absolute;
-	background: url(images/glare.png);
+	background: url(images/glare_iphone5.png);
 	background-repeat:no-repeat;
 	width:87px;
 	height:203px;
@@ -683,7 +683,7 @@ ul.features li.imgright .imgwrap{
 	margin-left: 51px;
     margin-top: 40px;
 	width: 192px;
-	height:339px;
+	height:341px;
 	z-index:9;
 }
 .androidS3.back img.screenshot{

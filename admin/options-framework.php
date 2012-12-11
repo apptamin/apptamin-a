@@ -252,7 +252,7 @@ if ( !function_exists( 'optionsframework_page' ) ) {
 			<p><?php _e('Apptamin also provides awesome app videos and app trailers, so you can show the world what your app is all about. <a href="http://www.apptamin.com/app-videos/" title="Get a video">Tempting, huh ?</a>',"apptamin-admin-text-sidebar");?></p>
 		
 			<h3><?php _e('Tips and Ressources',"apptamin-admin-text-sidebar");?></h3>
-			<?php _e("Receive our FREE updates and monthly wrap-up and don't miss out on our theme updates, new resources and blog posts! No Spam, promise.","apptamin-admin-text-sidebar");?>.
+			<?php _e("Receive our FREE updates and monthly wrap-up and don't miss out on our theme updates, new resources and blog posts! No Spam, promise.","apptamin-admin-text-sidebar");?>
 			<div class="notif">
 				<!-- Begin MailChimp Signup Form -->
 				<div id="mc_embed_signup">
@@ -268,7 +268,7 @@ if ( !function_exists( 'optionsframework_page' ) ) {
 			</div>
 			
 			<h3><?php _e('Blog',"apptamin-admin-text-sidebar");?></h3>
-			<p><?php _e("We blog about mobile apps marketing. Basically, we talk about our experience and all the app promotion techniques we've learned. We would love you to join the discussion (or make an interview if you're a developer), so <strong>check out <a href='http://www.apptamin.com/blog/' title='Apptamin's Blog'>Apptamin's Blog</a></strong>!","apptamin-admin-text-sidebar");?></p>
+			<p><?php _e("We blog about mobile apps marketing. Basically, we talk about our experience and all the app promotion techniques we've learned. We would love you to join the discussion (or make an interview if you're a developer), so <strong>check out our <a href='http://www.apptamin.com/blog/' title='Apptamin's Blog'>Apptamin App Marketing Blog</a></strong>!","apptamin-admin-text-sidebar");?></p>
 			<p><?php _e("<a href='http://feeds.feedburner.com/apptamin' title='Apptamin RSS Feed'>Subscribe to our RSS Feed</a> and never miss a post.","apptamin-admin-text-sidebar");?><p>
 			
 			<h3><?php _e("We need to eat, too ;)","apptamin-admin-text-sidebar");?></h3>
@@ -287,12 +287,14 @@ if ( !function_exists( 'optionsframework_page' ) ) {
 				<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 			</form>
 			
+			<h3><?php _e("Apptamin A Theme on GitHub","apptamin-admin-text-sidebar");?></h3>
+			<p><?php _e("You know what you're doing when it comes to WordPress themes and PHP? You're a designer? Check out the project on <a href='https://github.com/apptamin/apptamin-a' target='_blank'>GitHub</a> and <strong>together, let's take the theme to the next level</strong>. There are several improvements that could benefit many app developers!","apptamin-admin-text-sidebar");?></p>
+		
 			<h3><?php _e("Help & Support","apptamin-admin-text-sidebar");?></h3>
-			<p><strong><?php _e("We offer fast and reactive support with all our <a href='http://www.apptamin.com/websites-mobile-apps/'>paid themes</a></strong>. This is a free theme, so <strong>support is not guaranteed</strong>. However, we want to make it the best possible, so any problem or suggestion <strong>shoot us an email at <a href='mailto:contact@apptamin.com'>contact@apptamin.com</a></strong>. It just means that if we're chilling on the beach, out partying or working (more likely ;) we probably won't stop what we're doing to answer you right away. But you WILL get a response, no matter what.","apptamin-admin-text-sidebar");?></p>
+			<p><?php _e("This is a free theme, so <strong>support is not guaranteed</strong>. However, we want to make it the best possible, so any problem or suggestion <strong>shoot us an email at <a href='mailto:contact@apptamin.com'>contact@apptamin.com</a></strong>. It just means that if we're chilling on the beach, out partying or working (more likely ;) we probably won't stop what we're doing to answer you right away. But you WILL get a response, no matter what.","apptamin-admin-text-sidebar");?></p>
 		
 			<h3><?php _e("Showcase your appsite","apptamin-admin-text-sidebar");?></h3>
 			<p><?php _e("We'd be glad to feature what you did with our theme on our website. <strong><a href='mailto:contact@apptamin.com'>Contact Us !</a></strong>.","apptamin-admin-text-sidebar");?></p>
-		
 		
 		</div>
 	</div>

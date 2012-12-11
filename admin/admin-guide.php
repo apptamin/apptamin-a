@@ -35,6 +35,7 @@ function apptamin_guide_options() {
 		<ul>
 			<li><strong><?php echo _e("Apparence > Theme Options","apptaminguide");?></strong><br/>
 			<p><?php echo _e("In the Theme Options panel, you will find several tabs where you can define how your website is going to look like. Start with the basics : 'App Settings' then explore the other tabs to customize more.","apptaminguide");?></p>
+			<p><?php echo _e("If you know CSS, you can (should?) customize the theme design by modifying the yourstyles-xxx.css file (or creating a new one).","apptaminguide");?></p>
 			</li>
 			<li><strong><?php echo _e("Apparence > Widgets","apptaminguide");?></strong><br/>
 			<p><?php echo _e("We've defined customed widget-ready area to make your life simpler : 'App Widgets' and 'Footer Widgets'. We suggested you some elements and even created some custom Widgets (they start by 'Apptamin-'), but really you can drop anything you want in there.","apptaminguide");?></p>

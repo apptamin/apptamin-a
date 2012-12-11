@@ -179,13 +179,13 @@ function optionsframework_options() {
 		
 			
 	$options[] = array( "name" => "App Screenshot (front device)",
-		"desc" => "Upload your app screenshot for the front device. We recommend .jpg files with the following sizes : iPhone 4S (186px*279px), iPhone 5(185px*330px), Samsung Galaxy S2 (186px*310px), Samsung Galaxy S3 (192px*339px).",
+		"desc" => "Upload your app screenshot for the front device. We recommend .jpg files with the following sizes : iPhone 4S (186px*279px), iPhone 5(185px*328px), Samsung Galaxy S2 (186px*310px), Samsung Galaxy S3 (192px*341px).",
 		"id" => "app_screenshot_1_uploader",
 		"type" => "upload",
 		"class" => "recommended");
 		
 	$options[] = array( "name" => "App Screenshot (back device - not needed if 'none' selected as back device)",
-		"desc" => "Upload your app screenshot for the back device. We recommend .jpg files with the following sizes : iPhone 4S (186px*279px), iPhone 5(185px*330px), Samsung Galaxy S2 (186px*310px), Samsung Galaxy S3 (192px*339px).",
+		"desc" => "Upload your app screenshot for the back device. We recommend .jpg files with the following sizes : iPhone 4S (186px*279px), iPhone 5(185px*328px), Samsung Galaxy S2 (186px*310px), Samsung Galaxy S3 (192px*341px).",
 		"id" => "app_screenshot_2_uploader",
 		"type" => "upload");
 
@@ -251,13 +251,13 @@ function optionsframework_options() {
 		"type" => "textarea");
 	
 	$options[] = array( "name" => "",
-		"desc" => "Upload your app screenshot for the front device for Feature #1. We recommend .jpg files with the following sizes : iPhone 4S (186px*279px), iPhone 5(185px*330px), Samsung Galaxy S2 (186px*310px), Samsung Galaxy S3 (192px*339px).",
+		"desc" => "Upload your app screenshot for the front device for Feature #1. We recommend .jpg files with the following sizes : iPhone 4S (186px*279px), iPhone 5(185px*328px), Samsung Galaxy S2 (186px*310px), Samsung Galaxy S3 (192px*341px).",
 		"id" => "feature_1_screenshot_uploader",
 		"type" => "upload",
 		"class" => "recommended");
 		
 	$options[] = array( "name" => "",
-		"desc" => "Upload your app screenshot for the back device for Feature #1. We recommend .jpg files with the following sizes : iPhone 4S (186px*279px), iPhone 5(185px*330px), Samsung Galaxy S2 (186px*310px), Samsung Galaxy S3 (192px*339px).",
+		"desc" => "Upload your app screenshot for the back device for Feature #1. We recommend .jpg files with the following sizes : iPhone 4S (186px*279px), iPhone 5(185px*328px), Samsung Galaxy S2 (186px*310px), Samsung Galaxy S3 (192px*341px).",
 		"id" => "feature_1_back_screenshot_uploader",
 		"type" => "upload");
 	
@@ -310,13 +310,13 @@ function optionsframework_options() {
 		"type" => "textarea");
 	
 	$options[] = array( "name" => "",
-		"desc" => "Upload your app screenshot for the front device for Feature #2. We recommend .jpg files with the following sizes : iPhone 4S (186px*279px), iPhone 5(185px*330px), Samsung Galaxy S2 (186px*310px), Samsung Galaxy S3 (192px*339px).",
+		"desc" => "Upload your app screenshot for the front device for Feature #2. We recommend .jpg files with the following sizes : iPhone 4S (186px*279px), iPhone 5(185px*328px), Samsung Galaxy S2 (186px*310px), Samsung Galaxy S3 (192px*341px).",
 		"id" => "feature_2_screenshot_uploader",
 		"type" => "upload",
 		"class" => "recommended");
 		
 	$options[] = array( "name" => "",
-		"desc" => "Upload your app screenshot for the back device for Feature #2. We recommend .jpg files with the following sizes : iPhone 4S (186px*279px), iPhone 5(185px*330px), Samsung Galaxy S2 (186px*310px), Samsung Galaxy S3 (192px*339px).",
+		"desc" => "Upload your app screenshot for the back device for Feature #2. We recommend .jpg files with the following sizes : iPhone 4S (186px*279px), iPhone 5(185px*328px), Samsung Galaxy S2 (186px*310px), Samsung Galaxy S3 (192px*341px).",
 		"id" => "feature_2_back_screenshot_uploader",
 		"type" => "upload");
 	
@@ -369,13 +369,13 @@ function optionsframework_options() {
 		"type" => "textarea");
 	
 	$options[] = array( "name" => "",
-		"desc" => "Upload your app screenshot for the front device for Feature #3. We recommend .jpg files with the following sizes : iPhone 4S (186px*279px), iPhone 5(185px*330px), Samsung Galaxy S2 (186px*310px), Samsung Galaxy S3 (192px*339px).",
+		"desc" => "Upload your app screenshot for the front device for Feature #3. We recommend .jpg files with the following sizes : iPhone 4S (186px*279px), iPhone 5(185px*328px), Samsung Galaxy S2 (186px*310px), Samsung Galaxy S3 (192px*341px).",
 		"id" => "feature_3_screenshot_uploader",
 		"type" => "upload",
 		"class" => "recommended");
 		
 	$options[] = array( "name" => "",
-		"desc" => "Upload your app screenshot for the back device for Feature #3. We recommend .jpg files with the following sizes : iPhone 4S (186px*279px), iPhone 5(185px*330px), Samsung Galaxy S2 (186px*310px), Samsung Galaxy S3 (192px*339px).",
+		"desc" => "Upload your app screenshot for the back device for Feature #3. We recommend .jpg files with the following sizes : iPhone 4S (186px*279px), iPhone 5(185px*328px), Samsung Galaxy S2 (186px*310px), Samsung Galaxy S3 (192px*341px).",
 		"id" => "feature_3_back_screenshot_uploader",
 		"type" => "upload");
 	
@@ -427,13 +427,13 @@ function optionsframework_options() {
 		"type" => "textarea");
 	
 	$options[] = array( "name" => "",
-		"desc" => "Upload your app screenshot for the front device for Feature #4. We recommend .jpg files with the following sizes : iPhone 4S (186px*279px), iPhone 5(185px*330px), Samsung Galaxy S2 (186px*310px), Samsung Galaxy S3 (192px*339px).",
+		"desc" => "Upload your app screenshot for the front device for Feature #4. We recommend .jpg files with the following sizes : iPhone 4S (186px*279px), iPhone 5(185px*328px), Samsung Galaxy S2 (186px*310px), Samsung Galaxy S3 (192px*341px).",
 		"id" => "feature_4_screenshot_uploader",
 		"type" => "upload",
 		"class" => "recommended");
 		
 	$options[] = array( "name" => "",
-		"desc" => "Upload your app screenshot for the back device for Feature #4. We recommend .jpg files with the following sizes : iPhone 4S (186px*279px), iPhone 5(185px*330px), Samsung Galaxy S2 (186px*310px), Samsung Galaxy S3 (192px*339px).",
+		"desc" => "Upload your app screenshot for the back device for Feature #4. We recommend .jpg files with the following sizes : iPhone 4S (186px*279px), iPhone 5(185px*328px), Samsung Galaxy S2 (186px*310px), Samsung Galaxy S3 (192px*341px).",
 		"id" => "feature_4_back_screenshot_uploader",
 		"type" => "upload");
 	
@@ -486,13 +486,13 @@ function optionsframework_options() {
 		"type" => "textarea");
 	
 	$options[] = array( "name" => "",
-		"desc" => "Upload your app screenshot for the front device for Feature #5. We recommend .jpg files with the following sizes : iPhone 4S (186px*279px), iPhone 5(185px*330px), Samsung Galaxy S2 (186px*310px), Samsung Galaxy S3 (192px*339px).",
+		"desc" => "Upload your app screenshot for the front device for Feature #5. We recommend .jpg files with the following sizes : iPhone 4S (186px*279px), iPhone 5(185px*328px), Samsung Galaxy S2 (186px*310px), Samsung Galaxy S3 (192px*341px).",
 		"id" => "feature_5_screenshot_uploader",
 		"type" => "upload",
 		"class" => "recommended");
 		
 	$options[] = array( "name" => "",
-		"desc" => "Upload your app screenshot for the back device for Feature #5. We recommend .jpg files with the following sizes : iPhone 4S (186px*279px), iPhone 5(185px*330px), Samsung Galaxy S2 (186px*310px), Samsung Galaxy S3 (192px*339px).",
+		"desc" => "Upload your app screenshot for the back device for Feature #5. We recommend .jpg files with the following sizes : iPhone 4S (186px*279px), iPhone 5(185px*328px), Samsung Galaxy S2 (186px*310px), Samsung Galaxy S3 (192px*341px).",
 		"id" => "feature_5_back_screenshot_uploader",
 		"type" => "upload");
 	

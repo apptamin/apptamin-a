@@ -18,7 +18,7 @@
 						if (of_get_option('app_screenshot_1_uploader')){ ?>
 						<img class="screenshot" src="<?php echo of_get_option('app_screenshot_1_uploader'); ?>" alt="Home screenshot"/>
 					<?php }else{ ?>
-						<img class="screenshot" src="<?php bloginfo('stylesheet_directory'); ?>/images/screenshots/scr-home.jpg" alt="feature-1-scr"/>
+						<img class="screenshot" src="<?php bloginfo('stylesheet_directory'); ?>/images/screenshots/scr-placeholder.jpg" alt="feature-1-scr"/>
 					<?php 
 						}
 					?>
@@ -29,7 +29,7 @@
 						<?php if (of_get_option('app_screenshot_2_uploader')){ ?>
 							<img class="screenshot" src="<?php echo of_get_option('app_screenshot_2_uploader'); ?>" alt="feature-2-scr"/>
 						<?php }else{ ?>
-							<img class="screenshot" src="<?php bloginfo('stylesheet_directory'); ?>/images/screenshots/scr-home.jpg" alt="feature-2-scr"/>
+							<img class="screenshot" src="<?php bloginfo('stylesheet_directory'); ?>/images/screenshots/scr-placeholder.jpg" alt="feature-2-scr"/>
 						<?php } ?>
 				</div>
 				<?php }?>
