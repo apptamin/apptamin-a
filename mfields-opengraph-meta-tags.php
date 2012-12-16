@@ -85,7 +85,7 @@ class Mfields_Open_Graph_Meta_Tags {
 		$output = array(
 			'description' => get_bloginfo( 'description' ),
 			'title'       => get_bloginfo(),
-			'type'        => 'website',
+			'type'        => 'product',
 			'url'         => site_url(),
 			);
 		return apply_filters( 'mfields_open_graph_meta_tags_home', $output );
