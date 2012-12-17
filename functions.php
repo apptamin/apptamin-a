@@ -432,21 +432,24 @@ add_filter('thematic_menu_type', 'apptamin_change_menu_type');
 
 //Replace blog title with image
 
-function remove_thematic_blogtitle() {
-}
-remove_action('thematic_header','thematic_blogtitle',3);
-add_action('init','remove_thematic_blogtitle');
+  function remove_thematic_blogtitle() {
+    remove_action( 'thematic_header', 'thematic_blogtitle', 3 );
+  }
+
+  if ( of_get_option( 'company_showhidden', 'false' ) && of_get_option( 'apptamin_show_logo_uploader' ) ) {
+    add_action( 'init', 'remove_thematic_blogtitle' );
+  }
 
 // In the header div : defines if a company logo or name is displayed
-function apptamin_blogtitle() {
-if(of_get_option('company_showhidden', 'false' )){
-	if(of_get_option('apptamin_show_logo_uploader')) { ?>
-		<div id="blog-title"><a href="<?php bloginfo('siteurl');?>/" title="<?php bloginfo('name');?>"><img height="35" src="<?php echo of_get_option('apptamin_show_logo_uploader');?>" alt="<?php echo _e('Your app icon','apptamin-text-alt');?>"/></a></div>
-	<?php } else { 
-		thematic_blogtitle();
-	}
-	}
-}
+  function apptamin_blogtitle() {
+    if ( of_get_option( 'company_showhidden', 'false' ) && of_get_option( 'apptamin_show_logo_uploader' ) ) {
+	 ?>
+	 <div id="blog-title"><a href="<?php bloginfo( 'siteurl' ); ?>/" title="<?php bloginfo( 'name' ); ?>"><img height="35" src="<?php echo of_get_option( 'apptamin_show_logo_uploader' ); ?>" alt="<?php echo _e( 'Your app icon', 'apptamin-text-alt' ); ?>"/></a></div>
+	 <?php
+    } else {
+	 thematic_blogtitle();
+    }
+  }
 add_action('thematic_header', 'apptamin_blogtitle', 3);
 
 
@@ -511,7 +514,7 @@ add_action('thematic_header','childtheme_override_blogdescription',8);
 
 
 
-//On inclus la navigation à l'intérieur de la div branding
+//On inclus la navigation ï¿½ l'intï¿½rieur de la div branding
 function childtheme_override_brandingclose() { 
 	echo "\t\t</div><!--  #branding -->\n";
 }
