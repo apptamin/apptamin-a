@@ -63,7 +63,7 @@ function optionsframework_options() {
 
 	/**** =App Settings ****/	
 	
-	$options[] = array( "name" => "App Settings",
+	$options[] = array( "name" => "App",
 		"type" => "heading");
 
 	$options[] = array( "name" => "APP INFORMATIONS",
@@ -139,7 +139,7 @@ function optionsframework_options() {
 	/**** =AppStage Settings ****/		
 	
 	
-	$options[] = array( "name" => "AppStage Settings",
+	$options[] = array( "name" => "AppStage",
 		"type" => "heading");
 	
 	$options[] = array("name" => "APPSTAGE LAYOUT",
@@ -193,7 +193,7 @@ function optionsframework_options() {
 		
 	/**** =App Features Settings ****/	
 		
-	$options[] = array( "name" => "App Features Settings",
+	$options[] = array( "name" => "App Features",
 		"type" => "heading");
 
 	$options[] = array(
@@ -498,7 +498,7 @@ function optionsframework_options() {
 	
 	/**** =Video Settings ****/		
 		
-	$options[] = array( "name" => "Video Settings",
+	$options[] = array( "name" => "Video",
 		"type" => "heading");
 		
 	$options[] = array( "name" => "VIDEO INFORMATIONS",
@@ -531,7 +531,7 @@ function optionsframework_options() {
 	
 	/**** =Style Settings ****/		
 		
-	$options[] = array( "name" => "Style Settings",
+	$options[] = array( "name" => "Style",
 		"type" => "heading");
 		
 	$options[] = array( "name" => "FAVICON and backgrounds",
@@ -692,7 +692,7 @@ function optionsframework_options() {
 		
 	/**** =Social Settings ****/		
 		
-	$options[] = array( "name" => "Social Settings",
+	$options[] = array( "name" => "Social",
 		"type" => "heading");	
 	
 	$options[] = array( "name" => "TWITTER",
@@ -755,6 +755,19 @@ function optionsframework_options() {
 		"desc" => "These options will let you define the social settings relating to Google +",
 		"type" => "info",
 		"class" => "special");
+		
+	$options[] = array( "name" => "Google +1 button",
+		  "desc" => "Check if you want to display a +1 Button on the App Stage. The URL used will be the homepage URL. If you want to use a custom URL (like your android market app link for example), put the URL in the field bellow.",
+		  "id" => "apptamin_pobutton_showhidden_checkbox",
+		  "std" => "false",
+		  "type" => "checkbox" );
+	
+	$options[] = array(
+		  "desc" => "Put a custom URL if you want to use something else than the homepage URL (like your android market app link). Leave blank for default URL.",
+		  "id" => "apptamin_pocustom_url_text",
+		  "class" => "hidden",
+		  "std" => "",
+		  "type" => "text" );
 	
 	$options[] = array( "name" => "Widgets - Google + features",
 		"desc" => "You can define Google + stuff to use from the Appearence > Widgets page, by adding Widgets like a Google+ icon with a link to your page (widget: Apptamin - Social Icon).",
@@ -831,7 +844,7 @@ function optionsframework_options() {
 
 	/**** =Blog Settings ****/		
 		
-	$options[] = array( "name" => "Blog Settings",
+	$options[] = array( "name" => "Blog",
 		"type" => "heading");
 		
 	$options[] = array( "name" => "Adding a blog",
@@ -854,7 +867,7 @@ function optionsframework_options() {
 		
 	/**** =Widget / Advanced Settings ****/		
 	
-	$options[] = array( "name" => "Widgets / Advanced Settings",
+	$options[] = array( "name" => "Widgets / Advanced",
 		"type" => "heading");
 		
 	$options[] = array( "name" => "WIDGETS",
