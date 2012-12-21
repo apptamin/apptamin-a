@@ -113,6 +113,16 @@ jQuery(document).ready(function() {
 		jQuery('#section-apptamin_fbcustom_url_text').show();
 	}
 	
+	/****** GOOGLE +1 *******/
+
+        jQuery('#apptamin_pobutton_showhidden_checkbox').click(function() {
+    	 jQuery('#section-apptamin_pocustom_url_text').fadeToggle(400);
+        });
+
+        if (jQuery('#apptamin_pobutton_showhidden_checkbox:checked').val() !== undefined) {
+    	 jQuery('#section-apptamin_pocustom_url_text').show();
+        }
+	
 	/****** MAILCHIMP *******/
 	
 	jQuery('#mailchimp_header_showhidden').click(function() {
