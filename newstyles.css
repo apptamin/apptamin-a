@@ -300,7 +300,7 @@ body.home div.p3 {
 margin:0 auto;
 width:980px;
 position:relative;
-
+overflow:hidden;
 }
 #scroller #scroller-content {
 width:10000px;
