@@ -552,7 +552,7 @@ function optionsframework_options() {
 		"type" => "background");
 	
 	$options[] = array( "name" => "COMPANY NAME OR LOGO",
-		"desc" => "These options will let you display a Company Name or Logo",
+		"desc" => "These options will let you display the blog title or a logo",
 		"type" => "info",
 		"class" => "special");
 		

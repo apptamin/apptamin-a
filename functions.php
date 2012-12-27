@@ -440,25 +440,26 @@ return 'wp_nav_menu';
 }
 add_filter('thematic_menu_type', 'apptamin_change_menu_type');
 
-//Replace blog title with image
+//Replace blog title with image or don't display blog title at all
 
   function remove_thematic_blogtitle() {
     remove_action( 'thematic_header', 'thematic_blogtitle', 3 );
   }
-
-  if ( of_get_option( 'company_showhidden', 'false' ) && of_get_option( 'apptamin_show_logo_uploader' ) ) {
-    add_action( 'init', 'remove_thematic_blogtitle' );
-  }
+add_action( 'init', 'remove_thematic_blogtitle' );
 
 // In the header div : defines if a company logo or name is displayed
   function apptamin_blogtitle() {
-    if ( of_get_option( 'company_showhidden', 'false' ) && of_get_option( 'apptamin_show_logo_uploader' ) ) {
+    if ( of_get_option( 'company_showhidden', 'true' )) {
+		if (of_get_option( 'apptamin_show_logo_uploader' ) ){
 	 ?>
-	 <div id="blog-title"><a href="<?php bloginfo( 'siteurl' ); ?>/" title="<?php bloginfo( 'name' ); ?>"><img height="35" src="<?php echo of_get_option( 'apptamin_show_logo_uploader' ); ?>" alt="<?php echo _e( 'Your app icon', 'apptamin-text-alt' ); ?>"/></a></div>
+	 <div id="blog-title"><a href="<?php bloginfo( 'siteurl' ); ?>/" title="<?php bloginfo( 'name' ); ?>"><img height="35" src="<?php echo of_get_option( 'apptamin_show_logo_uploader' ); ?>"/></a></div>
 	 <?php
-    } else {
-	 thematic_blogtitle();
-    }
+		}else{
+		thematic_blogtitle();
+		}
+    } else{
+		//do nothing if checkbox unchecked and no logo uploaded
+	}
   }
 add_action('thematic_header', 'apptamin_blogtitle', 3);
 
