@@ -113,7 +113,6 @@
 								<!-- Place this tag where you want the +1 button to render. -->
 								<div class="g-plusone" data-size="tall" data-annotation="inline" data-width="300" href="<?php echo $po_link;?>"></div>
 							</div>
-
 							<!-- Place this tag after the last +1 button tag. -->
 							<script type="text/javascript">
 							  (function() {
