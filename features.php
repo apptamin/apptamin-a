@@ -73,6 +73,14 @@
 			<div class="features-txt">
 				<h3><?php echo of_get_option('feature_'.$i.'_text');?></h3>
 				<h4><?php echo of_get_option('feature_'.$i.'_textarea');?></h4>
+				<div class="download-buttons">
+						<?php if(of_get_option('app_android_store_checkbox')){ ?>
+							<a class="androiddl" target="_blank" href="<?php echo of_get_option('app_android_store_text');?>"  title="<?php echo _e('Download our Android app','apptamin-text-title');?>"></a>
+						<?php } ?>
+						<?php if(of_get_option('app_itunes_store_checkbox')){ ?>
+							<a class="itunesdl" target="_blank" href="<?php echo of_get_option('app_itunes_store_text');?>"  title="<?php echo _e('Download our iPhone app','apptamin-text-title');?>"></a>
+						<?php } ?>
+				</div>
 			</div>
 		</div>
 	</li>

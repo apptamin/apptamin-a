@@ -100,6 +100,29 @@
 								<iframe src="http://www.facebook.com/plugins/like.php?href=<?php if(of_get_option('apptamin_fbcustom_url_text')){echo of_get_option('apptamin_fbcustom_url_text');}else{bloginfo('url');}?>&layout=standard&postmessage&extended_social_context=false&show_faces=false&width=100&action=like&colorscheme=light" scrolling="no" frameborder="0"  allowTransparency="true" style="border:none; overflow:hidden; width:450px; height:30px"></iframe>
 							</div>
 						<?php } ?>
+						<?php if(of_get_option('apptamin_pobutton_showhidden_checkbox')) { ?>
+							
+							<div class="po-button">
+								<?php
+								if ( of_get_option( 'apptamin_pocustom_url_text' ) ) {
+								$po_link = of_get_option( 'apptamin_pocustom_url_text' );
+								} else {
+								$po_link = get_bloginfo( 'url' );
+								}
+								?>
+								<!-- Place this tag where you want the +1 button to render. -->
+								<div class="g-plusone" data-size="tall" data-annotation="inline" data-width="300" href="<?php echo $po_link;?>"></div>
+							</div>
+
+							<!-- Place this tag after the last +1 button tag. -->
+							<script type="text/javascript">
+							  (function() {
+								var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+								po.src = 'https://apis.google.com/js/plusone.js';
+								var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+							  })();
+							</script>
+						<?php } ?>
 					</div>
 			</div>
 
