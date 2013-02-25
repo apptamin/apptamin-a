@@ -27,7 +27,7 @@ textarea{
 
 body{
 	background-color:#000000;
-	background: url(images/bg.jpg);
+	/*background: url(images/bg.jpg);*/
 	color:#555;
 }
 p, 
@@ -314,7 +314,7 @@ width:10000px;
 	display:block;
 }
 .app-box .feature{
-	left:5px;
+	left:170px;
 	width:330px;
 	top:10px;
 }
@@ -344,12 +344,13 @@ a.app-icon{
 	margin-left:0px;
 }
 .app-name{
+	float: right;
 	padding-right:0px;
 	padding-top:15px;
 }
 .app-content{
-	width:600px;
-	text-align:right;
+	/*width:600px;*/
+	text-align: center;
 	float:right;
 }
 .app-content-left .app-content{
@@ -482,7 +483,7 @@ ul.features{
 ul.features > li{
 	clear:both;
 	display:block;
-	padding-top:30px;
+	padding-top:0px;
 	width:100%;
 }
 
@@ -490,10 +491,12 @@ ul.features li.imgright{
 	background-position: 0px 20px;
 }
 ul.features li .imgwrap{
-	width:960px;
+	width:1100px;
 	margin:0 auto;
-	height:510px;
+	height:310px;
 	position:relative;
+	padding-top: 10%;
+	padding-bottom: 10%;
 }
 ul.features li.imgright .imgwrap{
 	background-position: 0px 20px;
@@ -523,9 +526,13 @@ ul.features li.imgright .imgwrap{
 	left:0px;
 }
 
+
+
 .imgright .feature{
+	padding-top: 15px;
 	position:relative;
-	left:640px;
+	float: right;
+	/*left:50px;*/
 }
 /** iPhone 4S display properties **/
 .feature .iphone4S{
@@ -752,7 +759,7 @@ ul.features li.imgright .imgwrap{
 	font-size:2.1em;
 	line-height:36px;
     font-weight: normal;
-	padding-bottom:20px;
+	/*padding-bottom:20px;*/
 	width:100%;
 }
 .features h4{
@@ -761,14 +768,18 @@ ul.features li.imgright .imgwrap{
 	line-height:30px;
 }
 .features-txt{
-	padding-top:70px;
+	padding-top:85px;
 	float:left;
-	width:600px;
+	width:450px;
+	/*padding-top: 10%;*/
+	/*padding-bottom: 10%;*/
 }
 .imgleft .features-txt{
 	float:right;
 }
-
+.imgleft .feature {
+	padding-top: 15px;
+}
 .special{
 	clear:both;
 	display:block;
@@ -1550,8 +1561,8 @@ li.content-column {
 		margin-bottom:0px;
 }
 .main-aside > ul {
-	background: url("images/bg_side.png") repeat-y scroll 0 0 transparent;
-	/background:#f0e4cf;
+	/*background: url("images/bg_side.png") repeat-y scroll 0 0 transparent;*/
+	/*background:#f0e4cf;*/
 }
 .main-aside h3 {
 	padding-top:5px;

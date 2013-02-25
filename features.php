@@ -1,17 +1,4 @@
-﻿<?php if (is_active_sidebar('primary')){?>
-<!--<hr class="styled"/>-->
-<div class="special">
-	<div class="app-widgets">
-		<ul>
-			<?php if ( !function_exists('dynamic_sidebar')
-					|| !dynamic_sidebar('primary') ) : ?>    
-			<?php endif; ?>
-		</ul>
-	</div>
-</div>
-<?php } ?>
-
-<ul class="features">
+﻿<ul class="features">
 	<hr class="styled"/>
 	<?php 
 	$i=0;
@@ -23,6 +10,7 @@
 	if($i>1){?>
 	<hr class="styled"/>
 	<?php } ?>
+	
 	<li class="<?php echo of_get_option('feature_'.$i.'_images').' '.'feature'.$i;?>">
 		<div class="imgwrap">
 			<?php 				
@@ -35,6 +23,10 @@
 					$single='';
 				}
 			?>
+			<div class="features-txt">
+				<h3><?php echo of_get_option('feature_'.$i.'_text');?></h3>
+				<h4><?php echo of_get_option('feature_'.$i.'_textarea');?></h4>
+			</div>
 			<div class="feature <?php echo $single;?>">
 				<?php //$smartphone=of_get_option('feature_'.$i.'_smartphones_radio');?>
 				<div class="<?php echo $device_front_appstage;?>">
@@ -54,6 +46,7 @@
 							} 
 					}	*/
 					?>
+
 					<div class="glare"></div>
 				</div>
 				<?php 
@@ -70,6 +63,7 @@
 				}	
 				?>
 			</div>
+			<!--
 			<div class="features-txt">
 				<h3><?php echo of_get_option('feature_'.$i.'_text');?></h3>
 				<h4><?php echo of_get_option('feature_'.$i.'_textarea');?></h4>
@@ -77,11 +71,10 @@
 						<?php if(of_get_option('app_android_store_checkbox')){ ?>
 							<a class="androiddl" target="_blank" href="<?php echo of_get_option('app_android_store_text');?>"  title="<?php echo _e('Download our Android app','apptamin-text-title');?>"></a>
 						<?php } ?>
-						<?php if(of_get_option('app_itunes_store_checkbox')){ ?>
-							<a class="itunesdl" target="_blank" href="<?php echo of_get_option('app_itunes_store_text');?>"  title="<?php echo _e('Download our iPhone app','apptamin-text-title');?>"></a>
-						<?php } ?>
+						
 				</div>
 			</div>
+			-->
 		</div>
 	</li>
 

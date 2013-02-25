@@ -22,6 +22,7 @@ a:hover,a:visited{
 }
 body.home #main{
 	padding-bottom:0px;
+	background-color: ghostWhite;
 }
 
 /* =HEADER */
@@ -51,15 +52,15 @@ body.home #main{
 /* =APP STAGE */
 body.home #app-stage {
 	/*background: url("images/bg_appstage.jpg") repeat-x scroll center 0 transparent;*/
-	height:555px;
-	background:#F7F5F2;
+	/*height:555px;*/
+	background: #D9EEFC;
 	border-bottom:1px solid #fff;
 	box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.1) inset;
 }
 #scroller{
 	padding-top:30px;
 	/*background: url("images/bg_scroller.jpg") no-repeat scroll center 0 transparent;*/
-	background:#F7F5F2;	
+	/*background:#F7F5F2;	*/
 }
 .app-name h1{
 	color:#45494D;
@@ -69,6 +70,7 @@ body.home #app-stage {
     padding-top: 60px;
 }
 .app-description h2 {
+	padding-top: 20px;
     font-size: 1.8em;
     font-weight: normal;
     line-height: 30px;
@@ -133,14 +135,15 @@ hr.styled {
 	display:none;
 }
 ul.features li{
-	padding-top:50px;
-}
+	/*padding-top: 10%;
+	padding-bottom: 5%;
+*/}
 ul.features li.feature2{
 	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1) inset;
-	background:#F7F5F2;
+	background: #D9EEFC;
 }
-ul.features li.feature5{
-	background-color: #EDEAE5;
+ul.features li.feature4{
+	background-color: #D9EEFC;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset;
 }
 .features h3 {
