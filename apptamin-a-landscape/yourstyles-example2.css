@@ -27,9 +27,12 @@ body.home #main{
 
 /* =HEADER */
 #header{
+	width:100%;
+	min-width: 1030px;
 	background: #2E3133	; /* Old browsers */
 }
 #branding{
+	text-align: right;
 	height:65px;
 	width:980px;
 }
@@ -37,6 +40,8 @@ body.home #main{
     padding: 15px 0 0;
 }
 #access{
+	padding: 0;
+	/*margin-right: -10px;*/
 	text-transform:uppercase;
 	font-weight:normal;
 	padding-top:15px;
@@ -53,12 +58,13 @@ body.home #main{
 body.home #app-stage {
 	/*background: url("images/bg_appstage.jpg") repeat-x scroll center 0 transparent;*/
 	/*height:555px;*/
-	background: #D9EEFC;
+	background: #D7FCE4;
 	border-bottom:1px solid #fff;
 	box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.1) inset;
 }
 #scroller{
 	padding-top:30px;
+	height: 550px;
 	/*background: url("images/bg_scroller.jpg") no-repeat scroll center 0 transparent;*/
 	/*background:#F7F5F2;	*/
 }
@@ -140,10 +146,28 @@ ul.features li{
 */}
 ul.features li.feature2{
 	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1) inset;
-	background: #D9EEFC;
+	background: #D7FCE4;
+	height: 650px;
+}
+ul.features li.feature3{
+	height: 475px;
+}
+ul.features li.feature3 .features-txt {
+	padding-top: 65px;
+	width: 400px;
+}
+ul.features li.feature4 .imgwrap {
+	padding-top: 5%;
+}
+ul.features li.feature2 .imgwrap {
+	padding-top: 5%;
+}
+ul.features li.feature3 .imgwrap {
+	padding-top: 7%;
 }
 ul.features li.feature4{
-	background-color: #D9EEFC;
+	background-color: #D7FCE4;
+	height: 650px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset;
 }
 .features h3 {
@@ -152,6 +176,7 @@ ul.features li.feature4{
 }
 .features h4 {
 	color:#626263;
+	/*text-align: justify;*/
 }
 .features h4 span {
 	text-transform:uppercase;

@@ -113,7 +113,8 @@ a:hover {
 #branding {
 	display:block;
 	height:80px;
-	width:960px;
+	width:100%;
+	min-width: 980px;
 }
 
 #branding h1{
@@ -250,10 +251,13 @@ input.button{
 body.home #main{
 	margin:0;
 	width:100%;
+	min-width: 1030px;
 	padding-top:0px;
 }
 body.home #app-stage{
 	clear:both;
+	width:100%;
+	min-width: 1030px;
 }
 
 body.home #container {
@@ -298,7 +302,7 @@ body.home div.p3 {
 
 #scroller {
 margin:0 auto;
-width:980px;
+width:960px;
 position:relative;
 overflow:hidden;
 }
@@ -314,9 +318,10 @@ width:10000px;
 	display:block;
 }
 .app-box .feature{
-	left:170px;
+	/*left:100px;*/
 	width:330px;
-	top:10px;
+	top:25px;
+	float: left;
 }
 
 .app-box.app-content-left .feature{
@@ -349,9 +354,10 @@ a.app-icon{
 	padding-top:15px;
 }
 .app-content{
-	/*width:600px;*/
-	text-align: center;
+	width:450px;
+	text-align: right;
 	float:right;
+	padding-top: 40px;
 }
 .app-content-left .app-content{
 	float:left;
@@ -375,6 +381,7 @@ a.app-icon{
 .app-description{
 	line-height:24px;
 	padding-top:70px;
+	text-align: justify;;
 }
 .app-description h2{
 	font-size:1.4em;
@@ -491,11 +498,11 @@ ul.features li.imgright{
 	background-position: 0px 20px;
 }
 ul.features li .imgwrap{
-	width:1100px;
+	width:960px;
 	margin:0 auto;
 	height:310px;
 	position:relative;
-	padding-top: 10%;
+	padding-top: 5%;
 	padding-bottom: 10%;
 }
 ul.features li.imgright .imgwrap{
@@ -511,15 +518,16 @@ ul.features li.imgright .imgwrap{
 }
 .imgleft h3,.imgleft h4{
 	clear:none;
-	float:left;
+	/*float:left;*/
 }
 .imgright h3,.imgright h4{
 	clear:none;
 	float:left;
-	margin-left:30px;
+	/*margin-left:30px;*/
 }
 .imgleft h3,.imgleft h4{
-	margin-left:20px;
+	/*margin-left:20px;*/
+	text-align: right;
 }
 .feature{
 	position:relative;
@@ -529,7 +537,7 @@ ul.features li.imgright .imgwrap{
 
 
 .imgright .feature{
-	padding-top: 15px;
+	/*padding-top: 15px;*/
 	position:relative;
 	float: right;
 	/*left:50px;*/
@@ -768,9 +776,10 @@ ul.features li.imgright .imgwrap{
 	line-height:30px;
 }
 .features-txt{
-	padding-top:85px;
+	padding-top:175px;
 	float:left;
 	width:450px;
+	text-align: justify;
 	/*padding-top: 10%;*/
 	/*padding-bottom: 10%;*/
 }
@@ -778,7 +787,7 @@ ul.features li.imgright .imgwrap{
 	float:right;
 }
 .imgleft .feature {
-	padding-top: 15px;
+	/*padding-top: 15px;*/
 }
 .special{
 	clear:both;
@@ -1756,6 +1765,7 @@ li.content-column {
     padding:24px 0 24px 0;
 	text-align:center;
 	width:100%;
+	min-width: 1030px;
 }
 #siteinfo a {
 	color:#999;
