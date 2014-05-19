@@ -1,3 +1,11 @@
+********************************************************
+IMPORTANT
+********************************************************
+
+As the theme is getting old and we've stopped updating it, we're also dropping support. Feel free to use it, but you might want to look into a more recent (and responsive) theme.
+
+————
+
 Note: In order to install this Apptamin Theme, 
 you have to download the Thematic Theme 
 (the Apptamin A theme is a Thematic Child Theme 
@@ -37,9 +45,6 @@ A: I don't know, and that's one of the reason the project is on GitHub:
 so people better at coding than me can improve the theme.
 So far, the best workaround is to use the multi-site property of Wordpress
 to create a website per app, then using subdomains that link one to another.
-
-
-Any other questions or feedback, let us know!
 
 --
 Sylvain Gauchet
